@@ -40,12 +40,8 @@
   width: 1070px;
 }
 
-.item-lists.view_list .item {  
-  display: flex;  
-  flex-wrap: wrap; 
-} 
-
-.item {
+/* css для  view_module */
+.item-lists.view_module .item {
   flex: 1 1 350px; /* Элементы занимают равное пространство, минимальная ширина 350px */  
   max-width: 350px; 
   height: 350px; 
@@ -53,39 +49,32 @@
   box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
-.item-img {  
-  width: 100%;  
-  height: 200px;  
-  object-fit: contain; 
-  display: block; 
-}
-
-.item-name {
+.item-lists.view_module .item-name {
   margin: 10px 0 0;
   padding: 0;
   font-size: 20px;
 }
 
-.item-color {
+.item-lists.view_module .item-color {
   margin: 0;
   padding: 0;
   font-size: 12px;
 }
 
-.item-price-btn {
+.item-lists.view_module .item-price-btn {
   display: flex;  
   font-size: 16px;
   margin-top: 65%;
   justify-content: space-around;
 }
 
-.item-price {
+.item-lists.view_module .item-price {
   color: red;
   margin-top: auto;
   margin-bottom: auto;
 }
 
-.item-btn-atc {  
+.item-lists.view_module .item-btn-atc {  
   color: red;
   margin-top: auto;
   margin-bottom: auto;
@@ -95,9 +84,38 @@
 
 
  
-
-.item-lists.view_module .item { 
-  display: flex;  
+/* css для  view_list*/
+.item-lists.view_list {  
   flex-wrap: nowrap; 
   flex-direction: column;
+  
 } 
+
+.item-lists.view_list .item{  
+  display: flex; 
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;  
+  margin-bottom: 10px;
+  background-color: #f7f7f7;
+}
+
+.item-lists.view_list .item-img {  
+  display: block; 
+  width: auto;  
+  height: 80px;  
+  object-fit: contain; 
+  margin-left: 5px;
+}
+
+.item-lists.view_list .item-price {
+  color: red;
+}
+.item-lists.view_list .item-btn-atc {
+  color: red;
+  border: 1px solid;
+  border-radius: 15px;
+  margin-right: 5px;
+}
